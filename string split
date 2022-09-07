@@ -7,7 +7,9 @@ end
 
 function example(number,text)
  if text:sub(1,1) == "!" then
-  local x1 = text:sub(2)
-  local write = text:sub(#x1)
+  local write1 = text:sub(2)
+  local x1 = text:sub(#write1)
+  x1 = x1:sub(0,#write1+2)
+	write = tonumber(x1)
   end
 end
