@@ -1,0 +1,4 @@
+table = {
+[number] = {x =="y"},
+[number] = {a =="b"},
+}
