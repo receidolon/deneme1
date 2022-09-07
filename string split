@@ -1,0 +1,13 @@
+function string:split(sep)
+  local sep, fields = sep or ":", {}
+  local pattern = string.format("([^%s]+)", sep)
+  self:gsub(pattern, function(c) fields[#fields+1] = c end)
+  return fields
+end
+
+function example(number,text)
+ if text:sub(1,1) == "!" then
+  local x1 = text:sub(2)
+  local write = text:sub(#x1)
+  end
+end
