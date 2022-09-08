@@ -1,0 +1,6 @@
+function(ID,text)
+    if text:sub(1,2) == "hi" then 
+	else 
+	print("have not the else word")
+	end
+end
